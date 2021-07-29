@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+	body
+		{
+			background-image:url("download.jpg");
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		button
+    {
+    	border-style: dashed;
+    	margin: 0;
+  		position: absolute;
+  		top: 50%;
+  		left: 10%;
+    }
+</style>
+<title>MyPage</title>
+</head>
+<body>
+<script>
+          function doSomething()
+            {
+                  alert("Javascript");
+		   						var firstname=document.getElementById("fname").value;
+                  var lastname=document.getElementById("lname").value;
+		   						document.write('<table border="1">')
+      					  document.write('<tr><td>First Name</td><td>'+firstname+'</td></tr>');
+                  document.write('<tr><td>Last Name</td><td>'+lastname+'</td></tr>');
+                  document.write('</table>');
+
+                   
+	   				}
+</script>
+<div>
+<h1>Welcome</h1>
+<form name="Register">
+<table border="1" align="left">
+<tr><td>Enter first name</td><td> <input type= text id="fname" name="fname"></td></tr>
+<tr> <td>Enter last name</td><td>  <input type=text id="lname" name="lname"></td></tr>
+</table>
+<button onclick="doSomething()">Register</button>
+</form>
+</div>
+</body>
+</html>
