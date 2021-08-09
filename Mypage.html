@@ -1,58 +1,62 @@
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-	body
-		{
-			background-image:url("download.jpg");
-			background-size:cover;
-			background-repeat:no-repeat;
-			background-position: center;
-			background-attachment: fixed;
-		}
-		button
-    {
-    	border-style: dashed;
-    	margin: 0;
-  		position: absolute;
-  		top: 50%;
-  		left: 10%;
-    }
-</style>
-<title>MyPage</title>
+<link href="style.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!-- We will make a simple accordian with hover effects 
+The markup will have a list with images and the titles-->
 </head>
 <body>
-<script>
-          function doSomething()
-            {
-		   						var firstname=document.getElementById("fname").value;
-                  var lastname=document.getElementById("lname").value;
-                  var email=document.getElementById("email").value;
-                  var contactno=document.getElementById("contact").value;
-                  var address=document.getElementById("adr").value;
-
-		   						document.write('<table border="1">')
-      					  document.write('<tr><td>First Name</td><td>'+firstname+'</td></tr>');
-                  document.write('<tr><td>Last Name</td><td>'+lastname+'</td></tr>');
-                  document.write('<tr><td>Email id</td><td>'+email+'</td></tr>');
-                  document.write('<tr><td>Contact number</td><td>'+contactno+'</td></tr>');
-                  document.write('<tr><td>Address</td><td>'+address+'</td></tr>');
-                  document.write('</table>');
-
-                   
-	   				}
-</script>
-<div>
-<h1>Welcome</h1>
-<form name="Register" action="/action_page.php">
-<table border="1" align="left">
-<tr><td>Enter first name</td><td> <input type= text id="fname" name="fname" required></td></tr>
-<tr> <td>Enter last name</td><td>  <input type=text id="lname" name="lname"></td></tr>
-<tr> <td>Enter email id</td><td>  <input type=text id="email" name="email"></td></tr>
-<tr> <td>Enter contact number</td><td>  <input type=tel id="contact" name="contact"></td></tr>
-<tr> <td>Enter Address</td><td>  <input type=text id="adr" name="adr"></td></tr>
-</table>
-<button onclick="doSomething()">Register</button>
-</form>
+<div class="accordian">
+    <ul>
+		<li>
+			<div class="image_title">
+				<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">KungFu Panda</a>
+			</div> 
+			<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">
+				<img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">Toy Story 2</a>
+			</div>
+			<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">
+				<img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">Wall-E</a>
+			</div>
+			<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">
+				<img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Up</a>
+			</div>
+			<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">
+				<img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Cars 2</a>
+			</div>
+			<a href="https://www.youtube.com/channel/UCXTfDJ60DBmA932Du6B1ydg">
+				<img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg"/>
+			</a>
+		</li>
+	</ul>
 </div>
 </body>
 </html>
